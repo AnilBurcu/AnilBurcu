@@ -33,7 +33,7 @@ I'm a passionate Frontend Developer with a love for creating interactive and dyn
 
 ## 📫 How to Reach Me
 - [LinkedIn](https://www.linkedin.com/in/anil-burcu/)
-- - [Email](mailto:anlbrc95@gmail.com)
+- [Email](mailto:anlbrc95@gmail.com)
 
 ## ✨ Projects I'm Proud Of
 - [**Note taking app**](https://github.com/AnilBurcu/note_app)
