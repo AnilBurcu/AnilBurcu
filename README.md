@@ -36,9 +36,9 @@ I'm a passionate Frontend Developer with a love for creating interactive and dyn
 - - [Email](mailto:anlbrc95@gmail.com)
 
 ## ✨ Projects I'm Proud Of
-- [**Project One**](https://github.com/AnilBurcu/note_app)
-- [**Project Two**](https://github.com/AnilBurcu/Stocks)
-- [**Project Three**](https://github.com/AnilBurcu/Spoti)
+- [**Note taking app**](https://github.com/AnilBurcu/note_app)
+- [**Apple Stocks app clone**](https://github.com/AnilBurcu/Stocks)
+- [**Spotify Clone**](https://github.com/AnilBurcu/Spoti)
 
 ## 🚀 Fun Facts About Me
 - 🎨 I love combining design and code to create seamless user experiences.
