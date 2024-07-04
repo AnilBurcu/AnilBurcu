@@ -26,8 +26,6 @@ I'm a passionate Frontend Developer with a love for creating interactive and dyn
 ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
 ![SwiftUIKit](https://img.shields.io/badge/-SwiftUIKit-FA7343?style=flat&logo=swift&logoColor=white)
 
-
-
 ## 🏆 Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AnilBurcu&layout=compact&theme=radical)
 
@@ -46,5 +44,3 @@ I'm a passionate Frontend Developer with a love for creating interactive and dyn
 - 💬 Ask me about anything related to frontend development.
 
 ---
-
-⭐️ From [Anıl](https://github.com/AnilBurcu)
