@@ -7,7 +7,7 @@ I'm a passionate Frontend Developer with a love for creating interactive and dyn
 ## 🔭 What I'm Currently Working On
 - 🌐 Building responsive and accessible web applications
 - 💡 Experimenting with new frontend technologies and frameworks
-- 🛠️ Enhancing my skills in React, Vue, and Angular
+- 🛠️ Enhancing my skills in React and React Native
 - 📈 Contributing to open source projects
 
 ### Languages & Tools
@@ -33,11 +33,12 @@ I'm a passionate Frontend Developer with a love for creating interactive and dyn
 
 ## 📫 How to Reach Me
 - [LinkedIn](https://www.linkedin.com/in/anil-burcu/)
+- - [Email](mailto:anlbrc95@gmail.com)
 
 ## ✨ Projects I'm Proud Of
-- [**Project One**](https://github.com/AnilBurcu/projectone): A brief description of what this project does.
-- [**Project Two**](https://github.com/AnilBurcu/projecttwo): A brief description of what this project does.
-- [**Project Three**](https://github.com/AnilBurcu/projectthree): A brief description of what this project does.
+- [**Project One**](https://github.com/AnilBurcu/note_app)
+- [**Project Two**](https://github.com/AnilBurcu/Stocks)
+- [**Project Three**](https://github.com/AnilBurcu/Spoti)
 
 ## 🚀 Fun Facts About Me
 - 🎨 I love combining design and code to create seamless user experiences.
