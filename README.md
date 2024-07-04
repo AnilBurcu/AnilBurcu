@@ -10,23 +10,29 @@ I'm a passionate Frontend Developer with a love for creating interactive and dyn
 - 🛠️ Enhancing my skills in React, Vue, and Angular
 - 📈 Contributing to open source projects
 
-## 💼 Technical Skills
-- **Languages**: HTML, CSS, JavaScript, TypeScript
-- **Frameworks**: React, Vue, Angular, Svelte
-- **Tools**: Git, Webpack, Babel, npm, yarn
-- **Design**: Figma, Adobe XD, Sketch
-- **Testing**: Jest, Cypress, Mocha
+### Languages & Tools
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/-SASS-CC6699?style=flat&logo=sass&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat&logo=figma&logoColor=white)
+![Redux](https://img.shields.io/badge/-Redux-764ABC?style=flat&logo=redux&logoColor=white)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
+![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
+![SwiftUIKit](https://img.shields.io/badge/-SwiftUIKit-FA7343?style=flat&logo=swift&logoColor=white)
 
-## 📈 GitHub Stats
-![Anıl's GitHub Stats](https://github-readme-stats.vercel.app/api?username=AnilBurcu&show_icons=true&theme=radical)
+
 
 ## 🏆 Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AnilBurcu&layout=compact&theme=radical)
 
 ## 📫 How to Reach Me
 - [LinkedIn](https://www.linkedin.com/in/anil-burcu/)
-- [Twitter](https://twitter.com/yourusername) <!-- Replace 'yourusername' with your Twitter handle if you have one -->
-- [Portfolio](https://yourportfolio.com) <!-- Replace 'yourportfolio.com' with your actual portfolio link -->
 
 ## ✨ Projects I'm Proud Of
 - [**Project One**](https://github.com/AnilBurcu/projectone): A brief description of what this project does.
@@ -35,14 +41,8 @@ I'm a passionate Frontend Developer with a love for creating interactive and dyn
 
 ## 🚀 Fun Facts About Me
 - 🎨 I love combining design and code to create seamless user experiences.
-- 🌱 I'm currently learning advanced CSS techniques.
+- 🌱 I'm currently learning React Native and Swift UIKit.
 - 💬 Ask me about anything related to frontend development.
-
-## 📝 Latest Blog Posts
-<!-- BLOG-POST-LIST:START -->
-- [Your Latest Post](https://yourblog.com/latest-post) <!-- Replace with your actual blog post link -->
-- [Another Post](https://yourblog.com/another-post) <!-- Replace with your actual blog post link -->
-<!-- BLOG-POST-LIST:END -->
 
 ---
 
