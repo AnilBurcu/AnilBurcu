@@ -1,7 +1,5 @@
 # Hi there 👋, I'm Anıl!
 
-![Profile Views](https://komarev.com/ghpvc/?username=AnilBurcu&color=blueviolet)
-
 I'm a passionate Frontend Developer with a love for creating interactive and dynamic user experiences. Welcome to my GitHub profile!
 
 ## 🔭 What I'm Currently Working On
