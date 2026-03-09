@@ -64,13 +64,28 @@ Currently focused on **React Native / Expo** for cross-platform mobile developme
 | [**Instagram Clone**](https://github.com/AnilBurcu/Instagram) | Full-featured Instagram clone with Firebase | Swift |
 | [**Brainwave**](https://github.com/AnilBurcu/brainwave) | Modern web application | JavaScript |
 
-## 📊 GitHub Stats
+## 📊 Language Stats
 
 <div align="center">
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AnilBurcu&layout=compact&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AnilBurcu&layout=default&theme=tokyonight&hide_border=true&langs_count=10&card_width=400)
+
+</div>
+
+## 📈 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AnilBurcu&theme=tokyonight" width="400" alt="Repos per Language" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AnilBurcu&theme=tokyonight" width="400" alt="Most Commit Language" />
+
+<br/>
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AnilBurcu&theme=tokyonight&hide_border=true)
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AnilBurcu&theme=tokyonight" width="820" alt="Profile Details" />
 
 </div>
 
