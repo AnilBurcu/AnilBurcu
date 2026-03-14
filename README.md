@@ -10,7 +10,6 @@ Full-Stack Mobile Developer building production apps with React Native, Expo, an
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-000020?style=flat&logo=expo&logoColor=white)
-![Expo Router](https://img.shields.io/badge/Expo_Router-000020?style=flat&logo=expo&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
 ![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat&logo=swift&logoColor=white)
 ![UIKit](https://img.shields.io/badge/UIKit-2396F3?style=flat&logo=apple&logoColor=white)
@@ -25,7 +24,6 @@ Full-Stack Mobile Developer building production apps with React Native, Expo, an
 **Backend & Database**
 
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)
-![Edge Functions](https://img.shields.io/badge/Edge_Functions-3FCF8E?style=flat&logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
@@ -41,7 +39,6 @@ Full-Stack Mobile Developer building production apps with React Native, Expo, an
 **Infrastructure & Monitoring**
 
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
-![FCM](https://img.shields.io/badge/FCM-FFCA28?style=flat&logo=firebase&logoColor=black)
 ![APNs](https://img.shields.io/badge/APNs-000000?style=flat&logo=apple&logoColor=white)
 ![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat&logo=sentry&logoColor=white)
 ![PostHog](https://img.shields.io/badge/PostHog-F54E00?style=flat&logo=posthog&logoColor=white)
