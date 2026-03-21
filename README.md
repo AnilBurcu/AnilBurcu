@@ -1,127 +1,39 @@
 # Anıl Burcu
 
-Full-Stack Mobile Developer focused on building **production mobile applications** with modern architecture.
+Full-Stack Mobile Developer building production mobile apps with React Native, Expo, and Supabase.
 
-I specialize in shipping real products — from **mobile architecture and backend systems to App Store deployment.**
+From architecture → backend → App Store deployment.
 
----
+## Tech Stack
 
-# Tech Stack
+**Mobile:** React Native · Expo · TypeScript · Swift · UIKit
+**Backend:** Supabase · PostgreSQL · Node.js · Express
+**Architecture:** Feature-Based · Zustand · TanStack Query · MMKV
+**Auth & Payments:** Google OAuth · Apple Sign In · RevenueCat · StoreKit 2
+**Infrastructure:** Firebase · APNs · Sentry · PostHog
+**Frontend:** React · Next.js · TailwindCSS
 
-### Mobile
-React Native · Expo · TypeScript · Swift · UIKit
+## Production Apps
 
-### Architecture
-Feature-Based Architecture  
-Zustand  
-TanStack Query  
-MMKV Storage
+### Bodica
+Body language education app with AI-powered analysis, gamification, and subscription system.
+React Native · Expo · Supabase · RevenueCat · Sentry · PostHog
 
-### Backend
-Supabase  
-PostgreSQL  
-Node.js  
-Express  
-MongoDB
-
-### Auth & Payments
-Google OAuth  
-Apple Sign In  
-RevenueCat  
-StoreKit 2
-
-### Infrastructure
-Firebase  
-APNs  
-Sentry  
-PostHog
-
-### Frontend
-React  
-Vite  
-TailwindCSS
-
----
-
-# What I Build
-
-I focus on **production-grade mobile applications**, including:
-
-• scalable mobile architectures  
-• authentication systems  
-• in-app purchases  
-• analytics & monitoring  
-• real backend integrations
-
----
-
-# Production Apps
-
-Currently building two mobile applications:
-
-### Language Learning App
-A modern mobile language learning platform built with React Native and Supabase.
-
-### Body Language Education App
-Educational mobile application focused on nonverbal communication and body language learning.
-
----
-
-# Featured Projects
-
-### Language App Showcase
-Mobile language learning architecture example.
-
-Tech:
+### Language Traveler
+Language learning platform with spaced repetition, multi-language support, and local-first architecture.
 React Native · Expo · Supabase · Zustand · TanStack Query
 
----
-
-### Body Language Showcase
-Educational mobile app architecture example.
-
-Tech:
-React Native · Expo · Supabase · Feature-based architecture
-
----
+## Open Source
 
 ### Spoti
-Spotify client built with Swift and UIKit.
-
-Features:
-• OAuth authentication  
-• Spotify API integration  
-• MVC + Presenter pattern
-
----
+Spotify client built with Swift and UIKit. OAuth authentication, Spotify API integration, MVC + Presenter pattern.
 
 ### Stocks
-iOS stock tracker built with UIKit.
-
-Features:
-• async coordination with DispatchGroup  
-• stock charts  
-• REST API integration
-
----
+iOS stock tracker with async coordination, stock charts, and REST API integration.
 
 ### subtracker-backend
-Subscription tracking backend.
+Subscription tracking backend — Node.js · Express · MongoDB · Upstash · Arcjet
 
-Stack:
-Node.js · Express · MongoDB · Upstash · Arcjet
+## Contact
 
----
-
-# Philosophy
-
-I focus on building **clean, scalable, production-ready mobile applications.**
-
-From **architecture → backend → App Store deployment.**
-
----
-
-# Contact
-
-LinkedIn  
-Email
+[Portfolio](https://icodex.dev) · [LinkedIn](LINKEDIN_URL) · [Email](mailto:EMAIL)
