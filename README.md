@@ -19,7 +19,7 @@ From architecture → backend → App Store deployment.
 Body language education app with AI-powered analysis, gamification, and subscription system.
 React Native · Expo · Supabase · RevenueCat · Sentry · PostHog
 
-### Language Traveler
+### Language App
 Language learning platform with spaced repetition, multi-language support, and local-first architecture.
 React Native · Expo · Supabase · Zustand · TanStack Query
 
@@ -36,4 +36,4 @@ Subscription tracking backend — Node.js · Express · MongoDB · Upstash · Ar
 
 ## Contact
 
-[Portfolio](https://icodex.dev) · [LinkedIn](LINKEDIN_URL) · [Email](mailto:EMAIL)
+[Portfolio](https://icodex.dev) · [Email](mailto:EMAIL)
