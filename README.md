@@ -14,7 +14,7 @@ I build mobile apps and run them after launch: Postgres schema, serverless backe
 
 Bodica teaches body language through structured lessons, quizzes and AI photo analysis. Users sign in with Apple, Google or email OTP, and tokens live in hardware-encrypted storage. Subscriptions run through RevenueCat on StoreKit 2, push notifications use actionable categories, and analytics only run after GDPR consent. The backend is Supabase: Postgres with Row Level Security and Edge Functions.
 
-React Native 0.81 · Expo SDK 54 · TypeScript · Supabase · RevenueCat · Sentry · PostHog
+`React Native` · `Expo` · `TypeScript` · `Supabase` · `RevenueCat` · `Sentry` · `PostHog`
 
 [App Store](https://apps.apple.com/app/id6756843038) · [Google Play](https://play.google.com/store/apps/details?id=com.anilburcu.readbody) · [Architecture notes](https://github.com/AnilBurcu/Body-Language-Showcase)
 
@@ -22,13 +22,15 @@ React Native 0.81 · Expo SDK 54 · TypeScript · Supabase · RevenueCat · Sent
 
 Radora helps you learn English by reading. It has a spaced repetition engine for vocabulary, XP, streaks and badges, and a local-first architecture that works offline. The admin panel runs on Next.js and Vercel.
 
-React Native · Expo · TypeScript · Supabase · Zustand · TanStack Query
+`React Native` · `Expo` · `TypeScript` · `Supabase` · `Zustand` · `TanStack Query`
 
 [App Store](RADORA_APP_STORE_LINKI) · [Google Play](RADORA_PLAY_LINKI) · [Architecture notes](https://github.com/AnilBurcu/Language-App-Showcase)
 
 ## How I build
 
 Most of my thinking goes into architecture. I use a feature-based structure: each domain module owns its components, hooks, API layer and state, so modules share the same shape and stay easy to navigate as the codebase grows. Auth, storage, observability and privacy live in a core layer with explicit contracts. I care about making the next change cheap.
+
+Radora is the first app in my React Native monorepo. New apps will be built there, on top of one dependency graph and a shared foundation that grows with each project.
 
 ## Work with me
 
