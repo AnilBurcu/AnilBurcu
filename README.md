@@ -12,7 +12,7 @@ I build mobile apps and run them after launch: Postgres schema, serverless backe
 
 ### Bodica
 
-Bodica teaches body language through structured lessons, quizzes and AI photo analysis. Users sign in with Apple, Google or email OTP, and tokens live in hardware-encrypted storage. Subscriptions run through RevenueCat on StoreKit 2, push notifications use actionable categories, and analytics only run after GDPR consent. The backend is Supabase: Postgres with Row Level Security and Edge Functions.
+Bodica teaches body language through structured lessons, quizzes and AI photo analysis. Photos are analyzed by a Supabase Edge Function that calls the OpenAI and Gemini APIs, so keys and prompts never reach the client. Users sign in with Apple, Google or email OTP, tokens live in hardware-encrypted storage, and token refresh is serialized behind a mutex. Subscriptions run through RevenueCat on StoreKit 2 with server-side webhook validation, push notifications use actionable categories, and analytics only run after GDPR consent.
 
 `React Native` · `Expo` · `TypeScript` · `Supabase` · `RevenueCat` · `Sentry` · `PostHog`
 
@@ -20,10 +20,11 @@ Bodica teaches body language through structured lessons, quizzes and AI photo an
 
 ### Radora
 
-Radora helps you learn English by reading. It has a spaced repetition engine for vocabulary, XP, streaks and badges, and a local-first architecture that works offline. The admin panel runs on Next.js and Vercel.
+Radora helps you learn English by reading. It has a spaced repetition engine with per-word progress tracking and daily level-up caps, XP, levels and streaks, and a local-first architecture that keeps the app fully usable offline. Localized in English, Spanish and Turkish. The admin panel runs on Next.js and Vercel.
 
 `React Native` · `Expo` · `TypeScript` · `Supabase` · `Zustand` · `TanStack Query`
 
+<!-- Radora store linklerini ekleyip bu yorumu sil: -->
 [App Store](RADORA_APP_STORE_LINKI) · [Google Play](RADORA_PLAY_LINKI) · [Architecture notes](https://github.com/AnilBurcu/Language-App-Showcase)
 
 ## How I build
