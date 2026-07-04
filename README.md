@@ -1,64 +1,46 @@
-<div align="center">
+# Anıl Bürcü
 
-# Anıl Burcu
+Full-stack mobile engineer. Founder of [icodex studio](https://icodex.dev).
 
-**Full-stack mobile engineer.**
-Building production iOS and Android apps end-to-end — from schema to services to native auth, and the architectural decisions that make a codebase grow gracefully. Curious by default; always reading, prototyping, and learning in public.
+I build mobile apps and run them after launch: Postgres schema, serverless backend, native auth, payments, the React Native layer and the store release process. Two apps are live on the App Store and Google Play, built solo.
 
-[![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactnative.dev/)
-[![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)](https://expo.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)](https://developer.apple.com/swift/)
-[![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
+![React Native](https://img.shields.io/badge/React_Native-20232A?logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?logo=supabase&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
 
-[Portfolio](https://icodex.dev) · [Email](mailto:anl@icodex.dev)
+[Portfolio](https://icodex.dev) · [Email](mailto:anl@icodex.dev) · [LinkedIn](https://www.linkedin.com/in/anil-burcu/)
 
-</div>
+## Apps
 
----
+### Bodica
 
-## About
+Bodica teaches body language through structured lessons, quizzes and AI photo analysis. Users sign in with Apple, Google or email OTP, and tokens live in hardware-encrypted storage. Subscriptions run through RevenueCat on StoreKit 2, push notifications use actionable categories, and analytics only run after GDPR consent. The backend is Supabase: Postgres with Row Level Security and Edge Functions.
 
-I'm a full-stack mobile engineer who likes owning the whole picture — Postgres schema, serverless functions, native auth, the React Native layer on top, and every cross-cutting concern in between (storage, networking, observability, privacy). I'd rather get the boundaries right once than patch the same race condition in five places later.
+React Native 0.81 · Expo SDK 54 · TypeScript · Supabase · RevenueCat · Sentry · PostHog
 
-Most of my work today lives at the intersection of React Native, Supabase, and the iOS/Android ecosystems. I learn out loud, build in public, and treat every side project as an excuse to dig deeper into the layer underneath.
+[App Store](https://apps.apple.com/app/id6756843038) · [Google Play](https://play.google.com/store/apps/details?id=com.anilburcu.readbody) · [Architecture notes](https://github.com/AnilBurcu/Body-Language-Showcase)
 
-## How I Build
+### Radora
 
-Architecture is where I spend most of my thinking time. I lean **feature-based**: every domain module owns its components, hooks, API layer, and state — predictable shape across modules, isolated concerns, easy to navigate as a codebase grows. Cross-cutting concerns like auth, storage, observability, and privacy live in a clean core layer with explicit contracts. The goal isn't to be clever — it's to make the next change easy.
+Radora helps you learn English by reading. It has a spaced repetition engine for vocabulary, XP, streaks and badges, and a local-first architecture that works offline. The admin panel runs on Next.js and Vercel.
 
-## Currently Shipping
+React Native · Expo · TypeScript · Supabase · Zustand · TanStack Query
 
-### Bodica — Body language learning, AI-powered
+[App Store](RADORA_APP_STORE_LINKI) · [Google Play](RADORA_PLAY_LINKI) · [Architecture notes](https://github.com/AnilBurcu/Language-App-Showcase)
 
-A cross-platform mobile app teaching nonverbal communication through structured lessons, interactive quizzes, and AI-powered photo analysis. Three native auth providers (Apple, Google, email OTP), hardware-encrypted token storage, RevenueCat subscriptions with StoreKit 2, push notifications with actionable categories, and GDPR-gated analytics. Live on the App Store and Google Play.
+## How I build
 
-`React Native 0.81` · `Expo SDK 54` · `TypeScript` · `Supabase` · `RevenueCat` · `Sentry` · `PostHog`
+Most of my thinking goes into architecture. I use a feature-based structure: each domain module owns its components, hooks, API layer and state, so modules share the same shape and stay easy to navigate as the codebase grows. Auth, storage, observability and privacy live in a core layer with explicit contracts. I care about making the next change cheap.
 
-[App Store](https://apps.apple.com/app/id6756843038) · [Google Play](https://play.google.com/store/apps/details?id=com.anilburcu.readbody)
+## Work with me
 
-### Language Traveler
+icodex studio takes a small number of client projects: mobile apps built with React Native, Expo and Supabase, from schema design to store release. If you need the whole stack owned by one person, write to me.
 
-A language-learning platform with spaced repetition, multi-language content, and a local-first architecture optimized for offline study.
+[anl@icodex.dev](mailto:anl@icodex.dev) · [icodex.dev](https://icodex.dev)
 
-`React Native` · `Expo` · `Supabase` · `Zustand` · `TanStack Query`
+## Stack
 
-## Open Source
-
-### Download Manager — *coming soon*
-
-A native download manager. Currently in development — source and details landing soon.
-
-## Tech I Reach For
-
-**Mobile** — React Native, Expo (EAS), TypeScript, Hermes, New Architecture, Swift, UIKit  
-**State & Data** — Zustand, TanStack React Query, react-native-mmkv  
-**Backend** — Supabase (Postgres, RLS, Edge Functions), Node.js, Express, MongoDB  
-**Auth & Payments** — Apple Sign-In, Google Sign-In, OAuth, RevenueCat, StoreKit 2  
-**Observability** — Sentry (with PII scrubbing), PostHog (EU-hosted, consent-gated)  
-**Web** — React, Next.js, TypeScript, TailwindCSS
-
-## Let's Talk
-
-[icodex.dev](https://icodex.dev) · [anl@icodex.dev](mailto:anl@icodex.dev)
+- **Mobile:** React Native, Expo (EAS), TypeScript, Hermes, New Architecture, Swift, UIKit
+- **State and data:** Zustand, TanStack Query, react-native-mmkv
+- **Backend:** Supabase (Postgres, RLS, Edge Functions), Node.js, Express, MongoDB
+- **Auth and payments:** Apple Sign-In, Google Sign-In, OAuth, RevenueCat, StoreKit 2
+- **Monitoring:** Sentry with PII scrubbing, PostHog (EU-hosted, consent-gated)
+- **Web:** React, Next.js, TypeScript, Tailwind CSS
