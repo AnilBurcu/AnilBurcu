@@ -46,3 +46,7 @@ Radora helps you learn English by reading. A spaced repetition engine schedules 
 icodex studio takes a small number of client projects: mobile apps built with React Native, Expo and Supabase, from schema design to store release. If you need the whole stack owned by one person, write to me.
 
 [anl@icodex.dev](mailto:anl@icodex.dev) · [icodex.dev](https://icodex.dev)
+
+---
+
+<img src="activity.svg" alt="Repositories and activity — 13 public and 66 private repositories, 1,282 contributions over the last 12 months across 39 active weeks" width="100%">
