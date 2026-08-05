@@ -14,7 +14,7 @@ I build mobile apps and run them after launch: Postgres schema, serverless backe
 
 [Portfolio](https://icodex.dev) · [Email](mailto:anl@icodex.dev) · [LinkedIn](https://www.linkedin.com/in/anil-burcu/)
 
-## Apps
+## Highlighted Apps
 
 ### Bodica &nbsp;·&nbsp; live on the App Store and Google Play
 
