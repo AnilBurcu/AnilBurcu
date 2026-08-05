@@ -34,6 +34,7 @@ Radora helps you learn English by reading. A spaced repetition engine schedules 
 
 ## Stack
 
+- **Architecture:** MVVM, MVC and VIPER on Swift/UIKit; feature-based modules and a monorepo on React Native
 - **Mobile:** React Native, Expo (EAS), TypeScript, Hermes, New Architecture, Swift, UIKit
 - **State and data:** Zustand, TanStack Query, react-native-mmkv
 - **Backend:** Supabase (Postgres, RLS, Edge Functions), Node.js, Express, MongoDB

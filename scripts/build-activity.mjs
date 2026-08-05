@@ -9,7 +9,7 @@
  *
  * The card is a plain committed SVG rather than a third-party stats service:
  * no external image host in the README, no rate limits, and the private
- * count is something no public service can read anyway.
+ * repository count is something no public service can read anyway.
  */
 import { execFileSync } from 'node:child_process';
 import { writeFileSync, mkdirSync } from 'node:fs';
@@ -36,41 +36,10 @@ const weeks = calendar.weeks.map((w) => ({
 }));
 
 const repos = JSON.parse(
-  gh(['repo', 'list', 'AnilBurcu', '--limit', '500', '--json', 'isPrivate,isFork,name'])
+  gh(['repo', 'list', 'AnilBurcu', '--limit', '500', '--json', 'isPrivate'])
 );
 const priv = repos.filter((r) => r.isPrivate).length;
 const pub = repos.length - priv;
-
-// Language mix by bytes. One call per repo — the languages endpoint has no
-// bulk form — so this is the slow part of the rebuild (~40s over 79 repos).
-// Byte counts, not repo counts: counting repos would rank JavaScript first
-// purely on the strength of old throwaway projects.
-const sources = repos.filter((r) => !r.isFork);
-const langBytes = {};
-for (const r of sources) {
-  let payload;
-  try {
-    payload = JSON.parse(gh(['api', `repos/AnilBurcu/${r.name}/languages`]));
-  } catch {
-    continue; // repo vanished or is inaccessible; skip rather than fail the build
-  }
-  for (const [lang, bytes] of Object.entries(payload)) {
-    langBytes[lang] = (langBytes[lang] || 0) + bytes;
-  }
-}
-const langTotal = Object.values(langBytes).reduce((a, b) => a + b, 0) || 1;
-const DISPLAY = { PLpgSQL: 'PL/pgSQL', 'Objective-C': 'Obj-C' };
-const LANG_COLOUR = ['#3B82F6', '#3FCF8E', '#FB7185', '#FBBF24', '#8B5CF6'];
-const ranked = Object.entries(langBytes).sort((a, b) => b[1] - a[1]);
-const topLangs = ranked.slice(0, 4).map(([name, bytes], i) => ({
-  name: DISPLAY[name] || name,
-  pct: (bytes / langTotal) * 100,
-  colour: LANG_COLOUR[i],
-}));
-const restPct = 100 - topLangs.reduce((a, l) => a + l.pct, 0);
-if (restPct > 0.05) {
-  topLangs.push({ name: 'Other', pct: restPct, colour: '#94A3B8' });
-}
 
 const total = calendar.totalContributions;
 const activeWeeks = weeks.filter((w) => w.sum > 0).length;
@@ -78,16 +47,15 @@ const peak = Math.max(...weeks.map((w) => w.sum), 1);
 
 // ── Geometry ────────────────────────────────────────────────────────────────
 const W = 1000;
-const H = 372;
+const H = 280;
 const X0 = 60;
 const X1 = 940;
 const SPAN = X1 - X0;
-const BASE = 240; // silhouette baseline
+const BASE = 240; // bar baseline
 const BAR_MAX = 94;
 const pitch = SPAN / weeks.length;
-// Columns touch: the year reads as one continuous mass rather than 53
-// separate bars, which is what makes a busy year look busy.
-const barW = pitch + 0.4;
+const barW = Math.max(6, pitch - 2.2);
+const barRadius = 3.5;
 
 /**
  * Square-root scale, not linear.
@@ -126,30 +94,9 @@ const barSvg = weeks
     const h = w.sum === 0 ? 3 : barHeight(w.sum);
     const y = +(BASE - h).toFixed(2);
     const cls = w.sum === 0 ? 'bar zero' : 'bar';
-    return `  <rect class="${cls}" x="${x}" y="${y}" width="${barW.toFixed(2)}" height="${h.toFixed(2)}"/>`;
-  })
-  .join('\n');
-
-// ── Language mix ────────────────────────────────────────────────────────────
-const LANG_Y = 318;
-const LANG_H = 12;
-const GAP = 2;
-let cursor = X0;
-const langSegs = topLangs
-  .map((l, i) => {
-    const w = (l.pct / 100) * SPAN;
-    const drawW = Math.max(1, w - (i < topLangs.length - 1 ? GAP : 0));
-    const seg = `  <rect x="${cursor.toFixed(2)}" y="${LANG_Y}" width="${drawW.toFixed(2)}" height="${LANG_H}" fill="${l.colour}"/>`;
-    cursor += w;
-    return seg;
-  })
-  .join('\n');
-
-const langLegend = topLangs
-  .map((l, i) => {
-    const x = X0 + i * (SPAN / topLangs.length);
-    return `  <circle cx="${(x + 4).toFixed(1)}" cy="${LANG_Y + 34}" r="4" fill="${l.colour}"/>
-  <text class="legend" x="${(x + 16).toFixed(1)}" y="${LANG_Y + 38}">${l.name} <tspan class="legendpct">${l.pct.toFixed(1)}%</tspan></text>`;
+    // Radius is clamped to the bar so short weeks stay bars rather than dots.
+    const r = Math.min(barRadius, barW / 2, h / 2);
+    return `  <rect class="${cls}" x="${x}" y="${y}" width="${barW.toFixed(2)}" height="${h.toFixed(2)}" rx="${r.toFixed(2)}"/>`;
   })
   .join('\n');
 
@@ -180,9 +127,6 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
       <stop offset="83%"  stop-color="#FB7185"/>
       <stop offset="100%" stop-color="#FBBF24"/>
     </linearGradient>
-    <clipPath id="langclip">
-      <rect x="${X0}" y="${LANG_Y}" width="${SPAN}" height="${LANG_H}" rx="${LANG_H / 2}"/>
-    </clipPath>
   </defs>
 
   <style>
@@ -213,12 +157,6 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
     .rule { stroke: var(--rule); stroke-width: 1; }
     .baseline { stroke: var(--rule); stroke-width: 1.5; stroke-linecap: round; }
 
-    .legend {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 10px; letter-spacing: 0.6px; fill: var(--fg); opacity: 0.78;
-    }
-    .legendpct { opacity: 0.55; }
-
     /* Deliberately unanimated. An entry animation here would have to start
        from scaleY(0) with fill-mode both, which makes the chart invisible
        until it completes — so anything that rasterises the SVG once (link
@@ -240,15 +178,6 @@ ${barSvg}
   <line class="baseline" x1="${X0}" y1="${BASE + 1}" x2="${X1}" y2="${BASE + 1}"/>
 
 ${monthSvg}
-
-  <line class="rule" x1="${X0}" y1="288" x2="${X1}" y2="288"/>
-  <text class="caption" x="${X0}" y="309">LANGUAGES · SHARE OF CODE BY BYTES · ${sources.length} REPOSITORIES</text>
-
-  <g clip-path="url(#langclip)">
-${langSegs}
-  </g>
-
-${langLegend}
 </svg>
 `;
 

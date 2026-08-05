@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 372" width="1000" height="372" role="img" aria-label="Repositories and activity: 13 public and 66 private repositories, 1,285 contributions over the last 12 months across 39 active weeks.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="Repositories and activity: 13 public and 66 private repositories, 1,286 contributions over the last 12 months across 39 active weeks.">
   <defs>
     <linearGradient id="spectrum" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="940" y2="0">
       <stop offset="0%"   stop-color="#3FCF8E"/>
@@ -9,9 +9,6 @@
       <stop offset="83%"  stop-color="#FB7185"/>
       <stop offset="100%" stop-color="#FBBF24"/>
     </linearGradient>
-    <clipPath id="langclip">
-      <rect x="60" y="318" width="880" height="12" rx="6"/>
-    </clipPath>
   </defs>
 
   <style>
@@ -42,12 +39,6 @@
     .rule { stroke: var(--rule); stroke-width: 1; }
     .baseline { stroke: var(--rule); stroke-width: 1.5; stroke-linecap: round; }
 
-    .legend {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 10px; letter-spacing: 0.6px; fill: var(--fg); opacity: 0.78;
-    }
-    .legendpct { opacity: 0.55; }
-
     /* Deliberately unanimated. An entry animation here would have to start
        from scaleY(0) with fill-mode both, which makes the chart invisible
        until it completes — so anything that rasterises the SVG once (link
@@ -63,7 +54,7 @@
   <text class="statlabel" x="60" y="87">PUBLIC REPOSITORIES</text>
   <text class="stat" x="280" y="68">66</text>
   <text class="statlabel" x="280" y="87">PRIVATE REPOSITORIES</text>
-  <text class="stat" x="500" y="68">1,285</text>
+  <text class="stat" x="500" y="68">1,286</text>
   <text class="statlabel" x="500" y="87">CONTRIBUTIONS · 12 MO</text>
   <text class="stat" x="720" y="68">39/53</text>
   <text class="statlabel" x="720" y="87">ACTIVE WEEKS</text>
@@ -71,94 +62,72 @@
   <line class="rule" x1="60" y1="106" x2="940" y2="106"/>
   <text class="caption" x="60" y="127">CONTRIBUTION ACTIVITY · WEEKLY · PEAK 133</text>
 
-  <rect class="bar zero" x="60" y="237" width="17.00" height="3.00"/>
-  <rect class="bar zero" x="76.6" y="237" width="17.00" height="3.00"/>
-  <rect class="bar zero" x="93.21" y="237" width="17.00" height="3.00"/>
-  <rect class="bar zero" x="109.81" y="237" width="17.00" height="3.00"/>
-  <rect class="bar zero" x="126.42" y="237" width="17.00" height="3.00"/>
-  <rect class="bar zero" x="143.02" y="237" width="17.00" height="3.00"/>
-  <rect class="bar zero" x="159.62" y="237" width="17.00" height="3.00"/>
-  <rect class="bar" x="176.23" y="206.39" width="17.00" height="33.61"/>
-  <rect class="bar" x="192.83" y="228.47" width="17.00" height="11.53"/>
-  <rect class="bar" x="209.43" y="209.5" width="17.00" height="30.50"/>
-  <rect class="bar" x="226.04" y="216.95" width="17.00" height="23.05"/>
-  <rect class="bar" x="242.64" y="220.03" width="17.00" height="19.97"/>
-  <rect class="bar" x="259.25" y="214.22" width="17.00" height="25.78"/>
-  <rect class="bar zero" x="275.85" y="237" width="17.00" height="3.00"/>
-  <rect class="bar" x="292.45" y="223.7" width="17.00" height="16.30"/>
-  <rect class="bar" x="309.06" y="220.03" width="17.00" height="19.97"/>
-  <rect class="bar zero" x="325.66" y="237" width="17.00" height="3.00"/>
-  <rect class="bar" x="342.26" y="225.88" width="17.00" height="14.12"/>
-  <rect class="bar" x="358.87" y="231.85" width="17.00" height="8.15"/>
-  <rect class="bar" x="375.47" y="214.22" width="17.00" height="25.78"/>
-  <rect class="bar" x="392.08" y="220.03" width="17.00" height="19.97"/>
-  <rect class="bar zero" x="408.68" y="237" width="17.00" height="3.00"/>
-  <rect class="bar zero" x="425.28" y="237" width="17.00" height="3.00"/>
-  <rect class="bar" x="441.89" y="218.43" width="17.00" height="21.57"/>
-  <rect class="bar zero" x="458.49" y="237" width="17.00" height="3.00"/>
-  <rect class="bar zero" x="475.09" y="237" width="17.00" height="3.00"/>
-  <rect class="bar" x="491.7" y="208.43" width="17.00" height="31.57"/>
-  <rect class="bar" x="508.3" y="231.85" width="17.00" height="8.15"/>
-  <rect class="bar" x="524.91" y="212.97" width="17.00" height="27.03"/>
-  <rect class="bar" x="541.51" y="196.87" width="17.00" height="43.13"/>
-  <rect class="bar" x="558.11" y="185.93" width="17.00" height="54.07"/>
-  <rect class="bar" x="574.72" y="150.34" width="17.00" height="89.66"/>
-  <rect class="bar" x="591.32" y="171.81" width="17.00" height="68.19"/>
-  <rect class="bar" x="607.92" y="146.71" width="17.00" height="93.29"/>
-  <rect class="bar" x="624.53" y="146" width="17.00" height="94.00"/>
-  <rect class="bar" x="641.13" y="195.36" width="17.00" height="44.64"/>
-  <rect class="bar" x="657.74" y="158.09" width="17.00" height="81.91"/>
-  <rect class="bar" x="674.34" y="204.47" width="17.00" height="35.53"/>
-  <rect class="bar" x="690.94" y="193.18" width="17.00" height="46.82"/>
-  <rect class="bar" x="707.55" y="189.1" width="17.00" height="50.90"/>
-  <rect class="bar" x="724.15" y="189.75" width="17.00" height="50.25"/>
-  <rect class="bar" x="740.75" y="196.11" width="17.00" height="43.89"/>
-  <rect class="bar" x="757.36" y="204.47" width="17.00" height="35.53"/>
-  <rect class="bar" x="773.96" y="197.65" width="17.00" height="42.35"/>
-  <rect class="bar" x="790.57" y="195.36" width="17.00" height="44.64"/>
-  <rect class="bar" x="807.17" y="187.18" width="17.00" height="52.82"/>
-  <rect class="bar zero" x="823.77" y="237" width="17.00" height="3.00"/>
-  <rect class="bar" x="840.38" y="215.55" width="17.00" height="24.45"/>
-  <rect class="bar" x="856.98" y="187.81" width="17.00" height="52.19"/>
-  <rect class="bar" x="873.58" y="187.81" width="17.00" height="52.19"/>
-  <rect class="bar" x="890.19" y="209.5" width="17.00" height="30.50"/>
-  <rect class="bar" x="906.79" y="156.88" width="17.00" height="83.12"/>
-  <rect class="bar" x="923.4" y="202.65" width="17.00" height="37.35"/>
+  <rect class="bar zero" x="60" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar zero" x="76.6" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar zero" x="93.21" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar zero" x="109.81" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar zero" x="126.42" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar zero" x="143.02" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar zero" x="159.62" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar" x="176.23" y="206.39" width="14.40" height="33.61" rx="3.50"/>
+  <rect class="bar" x="192.83" y="228.47" width="14.40" height="11.53" rx="3.50"/>
+  <rect class="bar" x="209.43" y="209.5" width="14.40" height="30.50" rx="3.50"/>
+  <rect class="bar" x="226.04" y="216.95" width="14.40" height="23.05" rx="3.50"/>
+  <rect class="bar" x="242.64" y="220.03" width="14.40" height="19.97" rx="3.50"/>
+  <rect class="bar" x="259.25" y="214.22" width="14.40" height="25.78" rx="3.50"/>
+  <rect class="bar zero" x="275.85" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar" x="292.45" y="223.7" width="14.40" height="16.30" rx="3.50"/>
+  <rect class="bar" x="309.06" y="220.03" width="14.40" height="19.97" rx="3.50"/>
+  <rect class="bar zero" x="325.66" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar" x="342.26" y="225.88" width="14.40" height="14.12" rx="3.50"/>
+  <rect class="bar" x="358.87" y="231.85" width="14.40" height="8.15" rx="3.50"/>
+  <rect class="bar" x="375.47" y="214.22" width="14.40" height="25.78" rx="3.50"/>
+  <rect class="bar" x="392.08" y="220.03" width="14.40" height="19.97" rx="3.50"/>
+  <rect class="bar zero" x="408.68" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar zero" x="425.28" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar" x="441.89" y="218.43" width="14.40" height="21.57" rx="3.50"/>
+  <rect class="bar zero" x="458.49" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar zero" x="475.09" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar" x="491.7" y="208.43" width="14.40" height="31.57" rx="3.50"/>
+  <rect class="bar" x="508.3" y="231.85" width="14.40" height="8.15" rx="3.50"/>
+  <rect class="bar" x="524.91" y="212.97" width="14.40" height="27.03" rx="3.50"/>
+  <rect class="bar" x="541.51" y="196.87" width="14.40" height="43.13" rx="3.50"/>
+  <rect class="bar" x="558.11" y="185.93" width="14.40" height="54.07" rx="3.50"/>
+  <rect class="bar" x="574.72" y="150.34" width="14.40" height="89.66" rx="3.50"/>
+  <rect class="bar" x="591.32" y="171.81" width="14.40" height="68.19" rx="3.50"/>
+  <rect class="bar" x="607.92" y="146.71" width="14.40" height="93.29" rx="3.50"/>
+  <rect class="bar" x="624.53" y="146" width="14.40" height="94.00" rx="3.50"/>
+  <rect class="bar" x="641.13" y="195.36" width="14.40" height="44.64" rx="3.50"/>
+  <rect class="bar" x="657.74" y="158.09" width="14.40" height="81.91" rx="3.50"/>
+  <rect class="bar" x="674.34" y="204.47" width="14.40" height="35.53" rx="3.50"/>
+  <rect class="bar" x="690.94" y="193.18" width="14.40" height="46.82" rx="3.50"/>
+  <rect class="bar" x="707.55" y="189.1" width="14.40" height="50.90" rx="3.50"/>
+  <rect class="bar" x="724.15" y="189.75" width="14.40" height="50.25" rx="3.50"/>
+  <rect class="bar" x="740.75" y="196.11" width="14.40" height="43.89" rx="3.50"/>
+  <rect class="bar" x="757.36" y="204.47" width="14.40" height="35.53" rx="3.50"/>
+  <rect class="bar" x="773.96" y="197.65" width="14.40" height="42.35" rx="3.50"/>
+  <rect class="bar" x="790.57" y="195.36" width="14.40" height="44.64" rx="3.50"/>
+  <rect class="bar" x="807.17" y="187.18" width="14.40" height="52.82" rx="3.50"/>
+  <rect class="bar zero" x="823.77" y="237" width="14.40" height="3.00" rx="1.50"/>
+  <rect class="bar" x="840.38" y="215.55" width="14.40" height="24.45" rx="3.50"/>
+  <rect class="bar" x="856.98" y="187.81" width="14.40" height="52.19" rx="3.50"/>
+  <rect class="bar" x="873.58" y="187.81" width="14.40" height="52.19" rx="3.50"/>
+  <rect class="bar" x="890.19" y="209.5" width="14.40" height="30.50" rx="3.50"/>
+  <rect class="bar" x="906.79" y="156.88" width="14.40" height="83.12" rx="3.50"/>
+  <rect class="bar" x="923.4" y="201.77" width="14.40" height="38.23" rx="3.50"/>
 
   <line class="baseline" x1="60" y1="241" x2="940" y2="241"/>
 
-  <text class="month" x="68.5" y="259" text-anchor="middle">AUG</text>
-  <text class="month" x="151.52" y="259" text-anchor="middle">SEP</text>
-  <text class="month" x="217.94" y="259" text-anchor="middle">OCT</text>
-  <text class="month" x="284.35" y="259" text-anchor="middle">NOV</text>
-  <text class="month" x="367.37" y="259" text-anchor="middle">DEC</text>
-  <text class="month" x="433.78" y="259" text-anchor="middle">JAN</text>
-  <text class="month" x="500.2" y="259" text-anchor="middle">FEB</text>
-  <text class="month" x="566.62" y="259" text-anchor="middle">MAR</text>
-  <text class="month" x="649.63" y="259" text-anchor="middle">APR</text>
-  <text class="month" x="716.05" y="259" text-anchor="middle">MAY</text>
-  <text class="month" x="799.07" y="259" text-anchor="middle">JUN</text>
-  <text class="month" x="865.48" y="259" text-anchor="middle">JUL</text>
-
-  <line class="rule" x1="60" y1="288" x2="940" y2="288"/>
-  <text class="caption" x="60" y="309">LANGUAGES · SHARE OF CODE BY BYTES · 79 REPOSITORIES</text>
-
-  <g clip-path="url(#langclip)">
-  <rect x="60.00" y="318" width="425.50" height="12" fill="#3B82F6"/>
-  <rect x="487.50" y="318" width="361.52" height="12" fill="#3FCF8E"/>
-  <rect x="851.02" y="318" width="35.95" height="12" fill="#FB7185"/>
-  <rect x="888.97" y="318" width="27.71" height="12" fill="#FBBF24"/>
-  <rect x="918.69" y="318" width="21.31" height="12" fill="#94A3B8"/>
-  </g>
-
-  <circle cx="64.0" cy="352" r="4" fill="#3B82F6"/>
-  <text class="legend" x="76.0" y="356">TypeScript <tspan class="legendpct">48.6%</tspan></text>
-  <circle cx="240.0" cy="352" r="4" fill="#3FCF8E"/>
-  <text class="legend" x="252.0" y="356">PL/pgSQL <tspan class="legendpct">41.3%</tspan></text>
-  <circle cx="416.0" cy="352" r="4" fill="#FB7185"/>
-  <text class="legend" x="428.0" y="356">Swift <tspan class="legendpct">4.3%</tspan></text>
-  <circle cx="592.0" cy="352" r="4" fill="#FBBF24"/>
-  <text class="legend" x="604.0" y="356">JavaScript <tspan class="legendpct">3.4%</tspan></text>
-  <circle cx="768.0" cy="352" r="4" fill="#94A3B8"/>
-  <text class="legend" x="780.0" y="356">Other <tspan class="legendpct">2.4%</tspan></text>
+  <text class="month" x="67.2" y="259" text-anchor="middle">AUG</text>
+  <text class="month" x="150.22" y="259" text-anchor="middle">SEP</text>
+  <text class="month" x="216.64" y="259" text-anchor="middle">OCT</text>
+  <text class="month" x="283.05" y="259" text-anchor="middle">NOV</text>
+  <text class="month" x="366.07" y="259" text-anchor="middle">DEC</text>
+  <text class="month" x="432.48" y="259" text-anchor="middle">JAN</text>
+  <text class="month" x="498.9" y="259" text-anchor="middle">FEB</text>
+  <text class="month" x="565.32" y="259" text-anchor="middle">MAR</text>
+  <text class="month" x="648.33" y="259" text-anchor="middle">APR</text>
+  <text class="month" x="714.75" y="259" text-anchor="middle">MAY</text>
+  <text class="month" x="797.77" y="259" text-anchor="middle">JUN</text>
+  <text class="month" x="864.18" y="259" text-anchor="middle">JUL</text>
 </svg>
