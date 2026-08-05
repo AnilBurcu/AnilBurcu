@@ -126,7 +126,7 @@ const barSvg = weeks
     const h = w.sum === 0 ? 3 : barHeight(w.sum);
     const y = +(BASE - h).toFixed(2);
     const cls = w.sum === 0 ? 'bar zero' : 'bar';
-    return `  <rect class="${cls}" style="animation-delay:${(i * 13).toFixed(0)}ms" x="${x}" y="${y}" width="${barW.toFixed(2)}" height="${h.toFixed(2)}"/>`;
+    return `  <rect class="${cls}" x="${x}" y="${y}" width="${barW.toFixed(2)}" height="${h.toFixed(2)}"/>`;
   })
   .join('\n');
 
@@ -219,29 +219,13 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
     }
     .legendpct { opacity: 0.55; }
 
-    .bar {
-      fill: url(#spectrum);
-      transform-box: fill-box;
-      transform-origin: bottom;
-      animation: grow 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
-    }
+    /* Deliberately unanimated. An entry animation here would have to start
+       from scaleY(0) with fill-mode both, which makes the chart invisible
+       until it completes — so anything that rasterises the SVG once (link
+       previews, feed readers, screenshotters) would capture an empty card.
+       The banner carries the motion; this one just has to be readable. */
+    .bar { fill: url(#spectrum); }
     .zero { opacity: 0.22; }
-    @keyframes grow {
-      from { transform: scaleY(0); opacity: 0; }
-      to   { transform: scaleY(1); opacity: 1; }
-    }
-    .langbar {
-      transform-box: fill-box;
-      transform-origin: left;
-      animation: sweep 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
-    }
-    @keyframes sweep {
-      from { transform: scaleX(0); }
-      to   { transform: scaleX(1); }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .bar, .langbar { animation: none; }
-    }
   </style>
 
   <text class="section" x="${X0}" y="26">REPOSITORIES &amp; ACTIVITY</text>
@@ -260,7 +244,7 @@ ${monthSvg}
   <line class="rule" x1="${X0}" y1="288" x2="${X1}" y2="288"/>
   <text class="caption" x="${X0}" y="309">LANGUAGES · SHARE OF CODE BY BYTES · ${sources.length} REPOSITORIES</text>
 
-  <g class="langbar" clip-path="url(#langclip)">
+  <g clip-path="url(#langclip)">
 ${langSegs}
   </g>
 
