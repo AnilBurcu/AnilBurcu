@@ -47,14 +47,26 @@ const peak = Math.max(...weeks.map((w) => w.sum), 1);
 
 // ── Geometry ────────────────────────────────────────────────────────────────
 const W = 1000;
-const H = 240;
+const H = 250;
 const X0 = 60;
 const X1 = 940;
 const SPAN = X1 - X0;
-const BASE = 204; // bar baseline
-const BAR_MAX = 66;
+const BASE = 212; // bar baseline
+const BAR_MAX = 78;
 const pitch = SPAN / weeks.length;
-const barW = Math.max(6, pitch - 5.6);
+const barW = Math.max(6, pitch - 2.2);
+
+/**
+ * Square-root scale, not linear.
+ *
+ * The distribution is heavily skewed — a 133-contribution peak against a
+ * median active week of 19. On a linear scale every ordinary week collapses
+ * into a 4-6px sliver and a year of steady work reads as an empty chart.
+ * Sqrt keeps the ordering intact and the peak still the tallest bar, while
+ * giving typical weeks a readable height. The peak value is printed in the
+ * caption so the top of the range stays explicit.
+ */
+const barHeight = (v) => (v === 0 ? 0 : Math.max(4, Math.sqrt(v / peak) * BAR_MAX));
 
 const fmt = (n) => n.toLocaleString('en-US');
 
@@ -73,14 +85,15 @@ const statSvg = stats
   })
   .join('\n');
 
-// Bars: one per ISO week, height scaled to the busiest week.
+// Bars: one per ISO week. Silent weeks keep a faint stub so the axis reads
+// as a continuous year rather than a gap.
 const barSvg = weeks
   .map((w, i) => {
     const x = +(X0 + i * pitch).toFixed(2);
-    const h = w.sum === 0 ? 2 : Math.max(3, (w.sum / peak) * BAR_MAX);
+    const h = w.sum === 0 ? 3 : barHeight(w.sum);
     const y = +(BASE - h).toFixed(2);
     const cls = w.sum === 0 ? 'bar zero' : 'bar';
-    return `  <rect class="${cls}" style="animation-delay:${(i * 13).toFixed(0)}ms" x="${x}" y="${y}" width="${barW.toFixed(2)}" height="${h.toFixed(2)}" rx="2"/>`;
+    return `  <rect class="${cls}" style="animation-delay:${(i * 13).toFixed(0)}ms" x="${x}" y="${y}" width="${barW.toFixed(2)}" height="${h.toFixed(2)}" rx="2.5"/>`;
   })
   .join('\n');
 
@@ -95,7 +108,7 @@ const monthSvg = weeks
     const x = +(X0 + i * pitch + barW / 2).toFixed(2);
     if (x > X1 - 14) return null;
     const name = d.toLocaleString('en-US', { month: 'short', timeZone: 'UTC' }).toUpperCase();
-    return `  <text class="month" x="${x}" y="223" text-anchor="middle">${name}</text>`;
+    return `  <text class="month" x="${x}" y="231" text-anchor="middle">${name}</text>`;
   })
   .filter(Boolean)
   .join('\n');
@@ -147,7 +160,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
       transform-origin: bottom;
       animation: grow 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
     }
-    .zero { opacity: 0.28; }
+    .zero { opacity: 0.22; }
     @keyframes grow {
       from { transform: scaleY(0); opacity: 0; }
       to   { transform: scaleY(1); opacity: 1; }

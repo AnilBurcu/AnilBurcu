@@ -49,4 +49,4 @@ icodex studio takes a small number of client projects: mobile apps built with Re
 
 ---
 
-<img src="activity.svg" alt="Repositories and activity — 13 public and 66 private repositories, 1,282 contributions over the last 12 months across 39 active weeks" width="100%">
+<img src="activity.svg" alt="Repositories and activity — public and private repository counts, and weekly contribution activity across the last 12 months" width="100%">
