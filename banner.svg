@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 150" width="1000" height="150" role="img" aria-label="Anıl Bürcü — full-stack mobile engineer. One continuous pipeline: schema, backend, auth, app, store.">
+  <defs>
+    <linearGradient id="signal" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="940" y2="0">
+      <stop offset="0%" stop-color="#3FCF8E"/>
+      <stop offset="38%" stop-color="#3B82F6"/>
+      <stop offset="72%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#F0637B"/>
+    </linearGradient>
+    <filter id="glow" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    :root {
+      --fg: #14181d;
+      --muted: #5b6570;
+      --track: rgba(20, 24, 29, 0.13);
+      --node: #98a2ad;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e8eef5;
+        --muted: #8d99a6;
+        --track: rgba(232, 238, 245, 0.15);
+        --node: #6d7885;
+      }
+    }
+
+    .name {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 31px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      fill: var(--fg);
+    }
+    .role, .tick {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      fill: var(--muted);
+    }
+    .role { font-size: 11px; letter-spacing: 2.7px; }
+    .tick { font-size: 9.5px; letter-spacing: 1.7px; opacity: 0.72; }
+
+    .track { stroke: var(--track); stroke-width: 1.5; stroke-linecap: round; }
+    .node  { fill: var(--node); opacity: 0.35; }
+
+    .trail {
+      stroke: url(#signal);
+      stroke-width: 2.25;
+      stroke-linecap: round;
+      stroke-dasharray: 70 880;
+      animation: trail 8s linear infinite;
+    }
+    /* The head cannot use url(#signal): a userSpaceOnUse gradient travels with
+       the transformed element, so the dot would keep its start colour while the
+       trail behind it shifted. Its fill is keyed to the same stops in time. */
+    .head { fill: #3FCF8E; animation: head 8s linear infinite, headColour 8s linear infinite; }
+    .carrier { animation: travel 8s linear infinite; }
+
+    /* Each node flashes in the colour the signal carries when it arrives. */
+    .n0 { --flash: #3FCF8E; animation: charge 8s linear infinite; animation-delay: 0s; }
+    .n1 { --flash: #3C9CD2; animation: charge 8s linear infinite; animation-delay: 1.44s; }
+    .n2 { --flash: #5775F6; animation: charge 8s linear infinite; animation-delay: 2.88s; }
+    .n3 { --flash: #965DE9; animation: charge 8s linear infinite; animation-delay: 4.32s; }
+    .n4 { --flash: #F0637B; animation: charge 8s linear infinite; animation-delay: 5.76s; }
+
+    .t0 { animation: label 8s linear infinite; animation-delay: 0s; }
+    .t1 { animation: label 8s linear infinite; animation-delay: 1.44s; }
+    .t2 { animation: label 8s linear infinite; animation-delay: 2.88s; }
+    .t3 { animation: label 8s linear infinite; animation-delay: 4.32s; }
+    .t4 { animation: label 8s linear infinite; animation-delay: 5.76s; }
+
+    @keyframes travel {
+      0%   { transform: translateX(0px); }
+      72%  { transform: translateX(880px); }
+      100% { transform: translateX(880px); }
+    }
+    @keyframes trail {
+      0%   { stroke-dashoffset: 70; opacity: 0; }
+      4%   { opacity: 0.95; }
+      66%  { opacity: 0.95; }
+      72%  { stroke-dashoffset: -810; opacity: 0; }
+      100% { stroke-dashoffset: -810; opacity: 0; }
+    }
+    @keyframes head {
+      0%   { opacity: 0; }
+      4%   { opacity: 1; }
+      66%  { opacity: 1; }
+      73%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    /* Stops of #signal (0 / 38 / 72 / 100% of the track) mapped onto the
+       fraction of the cycle the head needs to reach them. */
+    @keyframes headColour {
+      0%   { fill: #3FCF8E; }
+      27%  { fill: #3B82F6; }
+      52%  { fill: #8B5CF6; }
+      72%  { fill: #F0637B; }
+      100% { fill: #F0637B; }
+    }
+    @keyframes charge {
+      0%   { opacity: 0.35; r: 3;   fill: var(--node); }
+      3%   { opacity: 1;    r: 5.4; fill: var(--flash); }
+      11%  { opacity: 0.35; r: 3;   fill: var(--node); }
+      100% { opacity: 0.35; r: 3;   fill: var(--node); }
+    }
+    @keyframes label {
+      0%   { opacity: 0.72; }
+      3%   { opacity: 1; }
+      14%  { opacity: 0.72; }
+      100% { opacity: 0.72; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .trail, .head, .carrier, .node, .tick { animation: none; }
+      .trail { opacity: 0.85; stroke-dasharray: none; }
+      .node  { opacity: 0.9; }
+    }
+  </style>
+
+  <text class="name" x="60" y="55">Anıl Bürcü</text>
+  <text class="role" x="62" y="78">FULL-STACK MOBILE ENGINEER</text>
+
+  <line class="track" x1="60" y1="115" x2="940" y2="115"/>
+  <line class="trail" x1="60" y1="115" x2="940" y2="115"/>
+
+  <circle class="node n0" cx="60"  cy="115" r="3"/>
+  <circle class="node n1" cx="280" cy="115" r="3"/>
+  <circle class="node n2" cx="500" cy="115" r="3"/>
+  <circle class="node n3" cx="720" cy="115" r="3"/>
+  <circle class="node n4" cx="940" cy="115" r="3"/>
+
+  <g class="carrier">
+    <circle class="head" cx="60" cy="115" r="3.6" filter="url(#glow)"/>
+  </g>
+
+  <text class="tick t0" x="60"  y="137" text-anchor="middle">SCHEMA</text>
+  <text class="tick t1" x="280" y="137" text-anchor="middle">BACKEND</text>
+  <text class="tick t2" x="500" y="137" text-anchor="middle">AUTH</text>
+  <text class="tick t3" x="720" y="137" text-anchor="middle">APP</text>
+  <text class="tick t4" x="940" y="137" text-anchor="middle">STORE</text>
+</svg>
