@@ -2,7 +2,7 @@
 
 Full-stack mobile engineer. Founder of [icodex studio](https://icodex.dev).
 
-I build mobile apps and run them after launch: Postgres schema, serverless backend, native auth, payments, the React Native layer and the store release process. Built solo, end to end.
+I build mobile apps and run them after launch: Postgres schema, serverless backend, native auth, payments, the React Native layer and the store release process. Built solo, end to end since 2021
 
 ![React Native](https://img.shields.io/badge/React_Native-21262d?style=flat-square&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-21262d?style=flat-square&logo=expo&logoColor=white)
