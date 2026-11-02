@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 150" width="1000" height="150" role="img" aria-label="Anıl Bürcü — full-stack mobile engineer. One delivery path: schema, API, app, test, release, operate.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 150" width="1000" height="150" role="img" aria-label="Anıl — full-stack mobile engineer. One delivery path: schema, API, app, test, release, operate.">
   <defs>
     <linearGradient id="signal" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="940" y2="0">
       <stop offset="0%"   stop-color="#3FCF8E"/>
@@ -130,7 +130,7 @@
     }
   </style>
 
-  <text class="name" x="60" y="55">Anıl Bürcü</text>
+  <text class="name" x="60" y="55">Anıl</text>
   <text class="role" x="62" y="78">FULL-STACK MOBILE ENGINEER</text>
 
   <line class="track" x1="60" y1="113" x2="940" y2="113"/>
