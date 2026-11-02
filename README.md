@@ -1,4 +1,4 @@
-<img src="banner.svg" alt="AnilBurcu — full-stack mobile engineer" width="100%">
+<img src="banner.svg" alt="Anıl — full-stack mobile engineer" width="100%">
 
 Full-stack mobile engineer. Founder of [icodex studio](https://icodex.dev).
 
